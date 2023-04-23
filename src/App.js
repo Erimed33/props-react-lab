@@ -42,20 +42,23 @@ const donations = [
   },
 ];
 
+
 function App() {
   return (
     <>
-      <main className="container">
-        <section className="sidebar">
-          <RecentDonations donations={donations} />
+    <TopBar title="Go Fund Me" />
+    <main className="container">
+      <section className="sidebar">
+        <RecentDonations donations={donations} />
         </section>
+        
         <section className="">
           <Progress targetAmount={targetAmount} donations={donations} />
           <DonationForm donations={donations} />
-        </section>
-      </main>
-    </>
-  );
+          </section>
+          </main>
+          </>
+  )
 }
 
 export default App;
