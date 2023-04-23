@@ -1,10 +1,14 @@
-export default function TopBar() {
+import React from "react";
+
+export default function TopBar(props) {
+  const { title } = props;
+
   return (
-    <header>
-      <h1>
-        GoFund<span>Me</span>
-      </h1>
-      <p>Help me go on a vacation to a beach somewhere!</p>
+    <header className="topbar">
+      <h1>{title}</h1>
     </header>
   );
 }
+
+
+
